@@ -28,7 +28,6 @@
 |Misc| usage|
 |----|--------|
 |Hi| WELL|
-|Chitoge| Views info :v|
 |Retrieve| Retrieve viewOnceMessage WhatsApp Message|
 
 |Moderation| usage|
