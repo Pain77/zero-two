@@ -1,5 +1,5 @@
 {
-  "name": "Cara",
+  "name": "zero-two",
   "description": "A WhatsApp Bot With Rich Anime Features.",
   "keywords": [
       "bot",
@@ -11,9 +11,9 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
   ],
-  "website": "https://github.com/iamherok/Cara_public#readme",
-  "repository": "https://github.com/iamherok/Cara_public.git",
-  "logo": "https://www.digitalartsonline.co.uk/cmsdata/slideshow/3441290/6.jpg",
+  "website": "https://github.com/well300/zero-two#readme",
+  "repository": "https://github.com/well300/zero-two.git",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/7/71/Franxx_Zero_Two.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {
