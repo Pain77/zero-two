@@ -38,6 +38,6 @@ export default class Command extends BaseCommand {
                 }
             })
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .catch((reason: any) => M.reply(`❌ Error, Reason: ${reason}`))
+            .catch((reason: any) => M.reply(`✖️ Error, Reason: ${reason}`))
     }
 }
