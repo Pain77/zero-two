@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'zero-two',
             description: `Get cara's repo`,
-            aliases: ['zero-two','z2',zero2],
+            aliases: ['zero-two','z2','zero2','zero two'],
             category: 'general',
             usage: `${client.config.prefix}zero-two`,
             baseXp: 50
