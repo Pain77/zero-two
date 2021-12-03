@@ -103,6 +103,6 @@ export default class Command extends BaseCommand {
 					.build()
 					.catch(() => null);
 				if (!sticker) return void M.reply(`An Error Occurred While Converting`);
-        await M.reply(sticker, MessageType.sticker, Mimetype.webp)
+         await M.reply(sticker, MessageType.sticker, Mimetype.webp)
     }
 }
