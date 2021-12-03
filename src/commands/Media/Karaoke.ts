@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         const term = joined.trim()
         const { videos } = await yts(term + ' karaoke song')
         if (!videos || videos.length <= 0) return void M.reply(`No Matching videos found for the term *${term}*`)
-        const text = `🌟 Here you go 🌟`
+        const text = `_*🍙 Here's Your Karaoke 🍙*_`
 
         this.client
             .sendMessage(M.from, text, MessageType.extendedText, {
@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
                 contextInfo: {
                     externalAdReply: {
                         title: `Search Term: ${term}`,
-                        body: `🌟 Chitoge 🌟`,
+                        body: `𝙕𝙚𝙧𝙤 𝙏𝙬𝙤 ✿`,
                         mediaType: 2,
                         thumbnailUrl: videos[0].thumbnail,
                         mediaUrl: videos[0].url
@@ -38,6 +38,6 @@ export default class Command extends BaseCommand {
                 }
             })
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .catch((reason: any) => M.reply(`✖  An error occurred, Reason: ${reason}`))
+            .catch((reason: any) => M.reply(`❌ Error, Reason: ${reason}`))
     }
 }
