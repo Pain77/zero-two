@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
      run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
            const n = [
-           'https://i.pinimg.com/564x/80/c1/99/80c1992c17dc44e8731a6552f81e7c31.jpg'
+           'https://i.pinimg.com/236x/ef/7c/9a/ef7c9ae945c01da8b0aa074efc47a216.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIa6w8AaWfwBjBGeJDOvphtG64EO_EAzHCDKGpju2zP9BcRyaPbzZP78CtqDhMl35c4Yo&usqp=CAU','https://preview.redd.it/62od5seume621.jpg?auto=webp&s=171510b473a05764a0d8c17598910cfe4bd854b8'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -43,7 +43,7 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                      .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.image, {
+            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.image, {quoted:M.WAMessage,
 
 
             caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
