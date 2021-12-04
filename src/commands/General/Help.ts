@@ -29,15 +29,11 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `🎀ʜᴇʟʟᴏ ᴅᴀʀʟɪɴ' !
-
 🎗ɪ'ᴍ ᴢᴇʀᴏ ᴛᴡᴏ ᴀ  ᴡʜᴀᴛꜱᴀᴘᴘ-ʙᴏᴛ.
-
 〽ᴍʏ ᴘʀᴇꜰɪx ɪꜱ - " ${this.client.config.prefix} "
 ───────────
-1 | ᴅᴏɴ'ᴛ ᴄᴀʟʟ ʙᴏᴛꜱ ᴛᴏ ᴀᴠᴏɪᴅ ʙʟᴏᴄᴋɪɴɢ.
-    
+1 | ᴅᴏɴ'ᴛ ᴄᴀʟʟ ʙᴏᴛꜱ ᴛᴏ ᴀᴠᴏɪᴅ ʙʟᴏᴄᴋɪɴɢ.   
 2 | ᴅᴏɴ'ᴛ ꜱᴘᴀᴍ ɪɴ ɢʀᴏᴜᴘꜱ&ᴘᴍ ᴛᴏ ᴀᴠᴏɪᴅ ʙʟᴏᴄᴋɪɴɢ.
-
 ───────────
 -🄱🄾🅃 🄴🄰🅂🅈 🄻🄸🅂🅃
 
