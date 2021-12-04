@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
 			command: "help",
 			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}kacchan`,
+			usage: `${client.config.prefix}zerotwo`,
 		        dm: true,
                         aliases: ['h','?','well','menu']
 		});
