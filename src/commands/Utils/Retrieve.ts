@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 			],
 			undefined,
 			undefined,
-			"🌟 Here you go."
+			"_*hippity hoppity your image is now my property 🐸*_"
 		);
 	};
 }
