@@ -21,7 +21,11 @@ export default class Command extends BaseCommand {
         await axios.get(`http://docs-jojo.herokuapp.com/api/ip_geolocation?ip=${chitoge}`)
         .then((response) => {
                 // console.log(response);
-                const text = `🎗 *Ip*:  ${response.data.ip}\n *Type*: ${response.data.type}\n *Continent_code*: ${response.data.continent_code}\n *Continent_name*: ${response.data.continent_name}\n *Country_name*: ${response.data.country_name}`
+                const text = `🎗 *Ip*:  ${response.data.ip}\n
+                                 *Type*: ${response.data.type}\n 
+                                 *Continent_code*: ${response.data.continent_code}\n 
+                                 *Continent_name*: ${response.data.continent_name}\n 
+                                 *Country_name*: ${response.data.country_name}`
                 M.reply(text);
             }).catch(err => {
                 M.reply(`No such ip, Baka!`)
