@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         
-        return void M.reply( await request.buffer(`https://www.digitalartsonline.co.uk/cmsdata/slideshow/3441290/6.jpg`),
+        return void M.reply( await request.buffer(`https://steamuserimages-a.akamaihd.net/ugc/1631948214224307411/B1AF95D14C3D3F2270C7BEFD49A44FD1D401FE0B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false`),
         MessageType.image,
                     undefined,
                     undefined,
