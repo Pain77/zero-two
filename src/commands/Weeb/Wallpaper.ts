@@ -25,16 +25,16 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		if (!joined)
-			return void (await M.reply(`Give me a wallpaper term to search, Baka!`));
+			return void (await M.reply(`Give The Name Of Wallpaper You Want To Search 🔍`));
 		const chitoge: any = joined.trim().split("|");
 		const term: string = chitoge[0];
 		const amount: number = chitoge[1];
 		if (!amount)
 			return void M.reply(
-				`Give me the number of wallpapers to send, Baka!\n\nExample: *${this.client.config.prefix}wallpaper chitoge|5*`
+				`Give The Number Of Wallpapers You Want\n\nExample: *${this.client.config.prefix}wallpaper Zero Two | 7*`
 			);
 		if (amount > 20)
-			return void M.reply(`Do you want me to spam in this group?`);
+			return void M.reply(`Wallpaper Limit Is 20`);
 		const wall = new AnimeWallpaper();
 		const wallpaper = await wall.getAnimeWall2(term).catch(() => null);
 		if (!wallpaper)
@@ -42,7 +42,7 @@ export default class Command extends BaseCommand {
 				`Couldn't find any matching term of wallpaper.`
 			));
 		for (let i = 0; i < amount; i++) {
-			const res = `*🌟 Here you go.*`;
+			const res = `*_Here is Your Wallpaper 🌸_*`;
 			this.client.sendMessage(
 				M.from,
 				{ url: wallpaper[i].image },
