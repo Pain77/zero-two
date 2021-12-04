@@ -1,6 +1,4 @@
-/** @format */
-
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
+mport { MessageType, Mimetype } from "@adiwajshing/baileys";
 import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
@@ -10,24 +8,25 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "hi",
-			description: "Generally used to check if bot is Up",
+			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}hi`,
-			baseXp: 10,
+			usage: `${client.config.prefix}kacchan`,
+		        dm: true,
+                        aliases: ['yo']
 		});
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const chitoge =
-			"https://c.tenor.com/sLNMa5QPIvkAAAAM/zerotwo-dance.gif";
+		const zerotwo = 
+			"https://c.tenor.com/dE_Ph_z5kz0AAAPo/anime-pink-hair.mp4";
 		return void this.client.sendMessage(
 			M.from,
-			{ url: chitoge },
+			{ url: zerotwo },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `I don't have time to have a conversation with someone like you. Use something from *${this.client.config.prefix}help* list if you want anything. \n`,
+				caption: `ooh`,
 			}
 		);
 	};
