@@ -31,12 +31,12 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://wallpaperaccess.com/full/5304840.png'
+                'https://www.seekpng.com/png/detail/180-1804976_2-baby-zero-two.png'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
 				if (exp < 500) {
-					role = "🌸 Citizen";
+					role = "🎀 Citizen";
 				} else if (exp < 1000) {
 					role = "🔎 Cleric";
 				} else if (exp < 2000) {
@@ -82,7 +82,7 @@ export default class Command extends BaseCommand {
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://wallpaperaccess.com/full/5304840.png'
+                    'https://www.seekpng.com/png/detail/180-1804976_2-baby-zero-two.png'
             ),
             MessageType.image,
             undefined,
