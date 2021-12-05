@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
     // static count = 0
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
-        if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
+        if (!joined) return void M.reply('Give me the name of sticker you want to search 🐱')
         const cara = joined.trim()
         console.log(cara)
         
