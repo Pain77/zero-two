@@ -33,7 +33,7 @@ const b = `${data.result[i]}`
 
         const sticker: any = await new Sticker(b, {
 			pack: "sticker",
-			author: "BY cara",
+			author: "BY ZERO-TWO",
 			quality: 90,
 			type: "full",
 			categories: ["🎊"],
