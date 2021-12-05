@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `🏮 ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ\n
-╰• ᴡᴇʟʟ300/>
+╰• ᴡᴇʟʟ300
 🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/917842346461?text=𝙝𝙚𝙡𝙡𝙤+300/>
 ──────────────
 ╰• ᴘᴀɪɴ
