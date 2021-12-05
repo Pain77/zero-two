@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
     // static count = 0
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
-        if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
+        if (!joined) return void M.reply('Provide the keywords you wanna search 🐱')
         const chitoge = joined.trim()
         console.log(chitoge)
         const { data } = await axios.get(`https://api.ichikaa.xyz/api/pinterest?query=${chitoge}`)
@@ -31,21 +31,21 @@ export default class Command extends BaseCommand {
         while (true) {
             try {
                 M.reply(
-                    buffer || '🌟 An error occurred. Please try again later',
+                    buffer || '✖️ Something went wrong, please try again later ✖️',
                     MessageType.image,
                     undefined,
                     undefined,
-                    `💐 *Result: ${chitoge} has been found*\n`,
+                    `*Your query ${chitoge} has been found 🍂*\n`,
                     undefined
                 ).catch((e) => {
                     console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
                     // console.log('Failed')
-                    M.reply(`🌟An error occurred. Please try again later.`)
+                    M.reply(`✖️ Something went wrong, please try again later ✖️`)
                 })
                 break
             } catch (e) {
                 // console.log('Failed2')
-                M.reply(`âœ– An error occurred. Please try again later.`)
+                M.reply(`✖️ Something went wrong, please try again later ✖️`)
                 console.log(`This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`)
             }
         }
