@@ -85,16 +85,16 @@ export default class Command extends BaseCommand {
         let text = ''
         // map over reactions and add index + reaction to text
         Object.keys(Reactions).map((reaction) => {
-            text += `📍${reaction.charAt(0).toUpperCase() + reaction.slice(1)}\n`
+            text += `🍭${reaction.charAt(0).toUpperCase() + reaction.slice(1)}\n\n`
             // if index is multiple of 3, add a new line, else give 10 - length of the reaction spaces
             // index % 3 === 2 ? (text += '\n') : (text += ' '.repeat(10 - reaction.length))
         })
-        text += `🎀 *Usage:* ${this.client.config.prefix}(reaction) [tag/quote users]\nExample: ${this.client.config.prefix}pat`
+        text += `🍁 *Usage:* ${this.client.config.prefix}(reaction) [tag/quote users]\nExample: ${this.client.config.prefix}kiss`
         if (flag) {
-            if (!term) return void M.reply(`🪧 *OPTIONS:*\n${text}`)
+            if (!term) return void M.reply(`*_🍊 AVAILABLE REACTIONS 🍊_*\n\n${text}`)
             if (!Object.keys(Reactions).includes(term))
                 return void M.reply(
-                    `✖  No Reaction Found 🧧\nUse ${this.client.config.prefix}r to see all available reactions`
+                    ` No Reaction Found 🪒\nUse ${this.client.config.prefix}reactions to see all available reactions`
                 )
         }
         if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
