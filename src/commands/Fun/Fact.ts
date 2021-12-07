@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
             .get(`https://nekos.life/api/v2/fact`)
             .then((response) => {
                 // console.log(response);
-                const text = `📛 *Fact:* ${response.data.fact}`
+                const text = `🌼 *Fact:* ${response.data.fact}`
                 M.reply(text)
             })
             .catch((err) => {
