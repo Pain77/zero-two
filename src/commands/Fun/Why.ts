@@ -7,8 +7,8 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'why',
-            description: 'Asks you a *why* question.',
+            command: 'question',
+            description: 'Asks you a question.',
             category: 'fun',
             usage: `${client.config.prefix}why`,
             baseXp: 10
