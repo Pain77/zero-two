@@ -20,11 +20,11 @@ export default class Command extends BaseCommand {
             .get(`https://nekos.life/api/v2/why`)
             .then((response) => {
                 // console.log(response);
-                const text = `📝 *Question:* ${response.data.why}`
+                const text = `${response.data.why}`
                 M.reply(text)
             })
             .catch((err) => {
-                M.reply(`🔍 Error: ${err}`)
+                M.reply(`✖️ Error: ${err}`)
             })
     }
 }
