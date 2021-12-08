@@ -9,23 +9,17 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'support',
             aliases: ['sp'],
-            description: 'Get the support group link',
+            description: 'Get the group invite link',
             category: 'general',
             usage: `${client.config.prefix}support`,
-         
+            baseXp: 10
         })
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-      let imagee = await this.client.assets.get('supp')
-        await this.client.sendMessage(
-                M.sender.jid,
-                imagee,
-                MessageType.image,{caption:`Join our support group to add our bot in your group or you can ask any query regarding the bot
-   
-*Invite link:* https://chat.whatsapp.com/BpNKPx2m6FpHklshLUv73k`}
-            )
-            return void M.reply('*Sent you the Group Link in personal message*')
-        
-      }
-      }
+
+await this.client.sendMessage( M.sender.jid,`Join our support group to add our bot in your group or you can ask any query regarding the bot 
+*Invite link:* https://chat.whatsapp.com/BpNKPx2m6FpHklshLUv73k`, MessageType.text ) 
+return void M.reply('*Sent you the Group Link in personal message*')
+    }
+}
