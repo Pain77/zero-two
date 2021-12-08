@@ -12,7 +12,7 @@ import { MessageType } from "@adiwajshing/baileys";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "nsfwdoujin",
+			command: "nhentai",
 			description: `Gives you the doujin of the given idea and page.`,
 			aliases: ["ndoujin"],
 			category: "nsfw",
@@ -29,24 +29,24 @@ export default class Command extends BaseCommand {
 		const terms = joined.trim().split("|");
 		if (terms[0] === "")
 			return void M.reply(
-				`Give me the id and page of the nhentai doujin, Baka!`
+				`Give me the id and page number of the nhentai doujin\nExample: ${this.client.config.prefix} nhentai 117486 | 1`
 			);
 		const id = terms[0];
 		const page = terms[1];
-		if (!page) return void M.reply("Give me the page, Baka!");
+		if (!page) return void M.reply("Give me the page 🐧");
 		const o = evaluate(+terms[1] - +1);
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const doujin = await sHentai.getDoujin(id).catch((err: any) => {
 			return void M.reply(`Invalid doujin id, Baka!.`);
 		});
 		let text = "";
-		text += `🎀 *Title: ${doujin.titles.english}*\n`;
-		text += `🎗 *Tags: ${doujin.tags}*\n`;
-		text += `✍ *Author: ${doujin.author}*\n`;
+		text += `🉐 *Title: ${doujin.titles.english}*\n`;
+		text += `📑 *Tags: ${doujin.tags}*\n`;
+		text += `🎯 *Author: ${doujin.author}*\n`;
 		text += `📒 *Reading Progress: ${page} out of ${doujin.pages.length}*`;
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
-				`Don't be a pervert, Baka! This is not an NSFW group.`
+				`This is not a NSFW group, Type !act nsfw to enable it 🎈`
 			);
 		const buffer = await request.buffer(doujin.pages[o]).catch((e) => {
 			return void M.reply(e.message);
@@ -54,7 +54,7 @@ export default class Command extends BaseCommand {
 		while (true) {
 			try {
 				M.reply(
-					buffer || "✖ An error occurred. Please try again later.",
+					buffer || "✖ Error. Please try again later.",
 					MessageType.image,
 					undefined,
 					undefined,
@@ -66,14 +66,14 @@ export default class Command extends BaseCommand {
 					);
 					// console.log('Failed')
 					M.reply(
-						`✖ An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
+						`✖ Error. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
 					);
 				});
 				break;
 			} catch (e) {
 				// console.log('Failed2')
 				M.reply(
-					`✖ An error occurred. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
+					`✖ Error. Please try again later. Here's the page URL: *${doujin.pages[o]}*`
 				);
 				console.log(
 					`This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`
