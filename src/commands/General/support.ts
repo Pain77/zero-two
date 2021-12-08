@@ -8,7 +8,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'support',
-            aliases: ['sp'],
+            aliases: ['sup'],
             description: 'Get the group invite link',
             category: 'general',
             usage: `${client.config.prefix}support`,
