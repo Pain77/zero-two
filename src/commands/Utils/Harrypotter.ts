@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-		 if (!joined) return void (await M.reply(`Provide the text, Baka!`))
+		 if (!joined) return void (await M.reply(`Give me the text 🐱`))
         const cara = joined.trim()
 		const wall = await w5botapi.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html",
     cara
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`🌟 Here you go.\n`,
+					`_*Here you go 🐱🌸*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
