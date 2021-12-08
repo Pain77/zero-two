@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
 		await M.reply(
 			`*—(••÷[ 𝙕𝙀𝙍𝙊 𝙏𝙒𝙊 ]÷••)—*\n\n🔮 *Groups: ${
 		this.client.chats.all().filter(chat => chat.jid.endsWith('g.us')).length
-			}*\n\n🚦 *Uptime:${uptime()}*`
+			}*\n🚦 *Uptime:${uptime()}*\n*🤖 Bots:* 2\n*📑 commands:* 111`
 		);
 	};
 }
