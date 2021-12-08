@@ -18,16 +18,16 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('🔎 Provide a search term')
+        if (!joined) return void M.reply('Provide me a search term 🐱')
         const term = joined.trim()
         const { videos } = await yts(term)
-        if (!videos || videos.length <= 0) return void M.reply(`⚓ No Matching videos found for : *${term}*`)
+        if (!videos || videos.length <= 0) return void M.reply(`🌽 No Matching videos found for : *${term}*`)
         const length = videos.length < 10 ? videos.length : 10
-        let text = `🔎 *Results for ${term}*\n`
+        let text = `🌸 *Results of ${term}*\n`
         for (let i = 0; i < length; i++) {
-            text += `*#${i + 1}*\n📗 *Title:* ${videos[i].title}\n📕 *Channel:* ${
+            text += `*#${i + 1}*\n📒 *Title:* ${videos[i].title}\n🉐 *Channel:* ${
                 videos[i].author.name
-            }\n 📙 *Duration:* ${videos[i].duration}\n📘 *URL:* ${videos[i].url}\n\n`
+            }\n⏳ *Duration:* ${videos[i].duration}\n💸 *URL:* ${videos[i].url}\n\n`
         }
         M.reply('_*Loading ៚....*_')
         this.client
@@ -43,6 +43,6 @@ export default class Command extends BaseCommand {
                     }
                 }
             })
-            .catch((reason: any) => M.reply(`✖  An error occurred, Reason: ${reason}`))
+            .catch((reason: any) => M.reply(`✖ Error, Reason: ${reason}`))
     }
 }
