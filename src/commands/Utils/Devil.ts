@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`_*Hell is empty, all the devil's are here ☠️*_\n`,
+					`_*Even the devil was once a angle 🎃*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
