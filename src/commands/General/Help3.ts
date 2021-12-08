@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 🏮 ${this.client.config.prefix}mods 
 🏮 ${this.client.config.prefix}profile 
 🏮 ${this.client.config.prefix}zerotwo 
-🏮 ${this.client.config.prefix}rules 
+🏮 ${this.client.config.prefix}info 
 🏮 ${this.client.config.prefix}rank
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
