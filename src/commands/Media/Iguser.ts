@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
 	
 	    run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
-        if (!joined) return void M.reply('Give me the username of the account you want to search\n\nExample: ${this.client.config.prefix}iguser itsrockash')
+        if (!joined) return void M.reply('Give me the username of the account you want to search\n\nExample: !iguser itsrockash')
         const chitoge = joined.trim()
         console.log(chitoge)
         const { data } = await axios.get(`https://api-xcoders.xyz/api/stalk/ig?username=${chitoge}&apikey=LJowCce5Pn`)
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `✔ *Verified*:${data.result.is_verified}\n🗣 *Private*:${data.result.is_private}\n🎛 *Postcount*:${data.result.posts_count}\n🍃 *Following*:${data.result.followers}\n🗻 *Followers*:${data.result.following}\n📖 *Bio*:${data.result.biography}\n📃 *Fullname*:${data.result.full_name}\n🀄 *Username*: ${data.result.username}\n`,
+                    `✔ *Verified*:${data.result.is_verified}\n🗣 *Private*:${data.result.is_private}\n🎛 *Postcount*:${data.result.posts_count}\n🗻 *Followers*:${data.result.followers}\n🍃 *Following*:${data.result.following}\n📖 *Bio*:${data.result.biography}\n📃 *Fullname*:${data.result.full_name}\n🀄 *Username*: ${data.result.username}\n`,
                     undefined
                 ).catch((e) => {
                     console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
