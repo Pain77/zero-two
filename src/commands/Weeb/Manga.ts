@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,
 		{ joined }: IParsedArgs
 	): Promise<void> => {
-		if (!joined) return void (await M.reply(`Give me a manga title, Baka!`));
+		if (!joined) return void (await M.reply(`Give me a manga title 🐱`));
 		const chitoge = joined.trim();
 		const get = new Manga();
 		const search = await get
