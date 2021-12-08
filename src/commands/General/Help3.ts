@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
 🏮 ${this.client.config.prefix}admins 
 🏮 ${this.client.config.prefix}exp 
 🏮 ${this.client.config.prefix}hi 
-🏮 ${this.client.config.prefix}invitelink 
+🏮 ${this.client.config.prefix}grouplink 
 🏮 ${this.client.config.prefix}mods 
 🏮 ${this.client.config.prefix}profile 
 🏮 ${this.client.config.prefix}zerotwo 
