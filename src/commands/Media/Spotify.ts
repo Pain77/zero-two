@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
         const track = new Spotify(url)
         const info = await track.getInfo()
         if (info.error) return void M.reply(`⚓ Error Fetching: ${url}. Check if the url is valid and try again`)
-        const caption = `🎧 *Title:* ${info.name || ''}\n🎤 *Artists:* ${(info.artists || []).join(',')}\n💽 *Album:* ${
+        const caption = `📻 *Title:* ${info.name || ''}\n🎙️ *Artists:* ${(info.artists || []).join(',')}\n💿 *Album:* ${
             info.album_name
         }\n📆 *Release Date:* ${info.release_date || ''}`
         M.reply(
@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
         ).catch((reason: any) => M.reply(`✖ An error occurred, Reason: ${reason}`))
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         M.reply(await track.getAudio(), MessageType.audio).catch((reason: any) =>
-            M.reply(`✖ An error occurred, Reason: ${reason}`)
+            M.reply(`✖ Error, Reason: ${reason}`)
         )
     }
 }
