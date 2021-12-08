@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'support',
             aliases: ['sup'],
-            description: 'Get the group invite link',
+            description: 'Get our support group link',
             category: 'general',
             usage: `${client.config.prefix}support`,
             baseXp: 10
@@ -18,8 +18,18 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
-await this.client.sendMessage( M.sender.jid,`Join our support group to add our bot in your group or you can ask any query regarding the bot 
-*Invite link:* https://chat.whatsapp.com/BpNKPx2m6FpHklshLUv73k`, MessageType.text ) 
-return void M.reply('*Sent you the Group Link in personal message*')
+await this.client.sendMessage( M.sender.jid,`*ZERO TWO'S SUPPORT GROUP 🌸*
+
+*🉐 Info :* Jᴏɪɴ Oᴜʀ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ Tᴏ Aᴅᴅ Oᴜʀ Bᴏᴛ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Oʀ Yᴏᴜ Cᴀɴ Asᴋ Aɴʏ Qᴜᴇʀʏ Rᴇɢᴀʀᴅɪɴɢ Tʜʀ Bᴏᴛ!!
+
+*🎯 Rules :*
+- Fᴏʟʟᴏᴡ Tʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs
+- Fᴏʟʟᴏᴡ Tʜᴇ Aᴅᴍɪɴs
+- Dᴏɴᴛ Mɪssʙᴇʜᴀᴠᴇ Wɪᴛʜ Aɴʏ Mᴇᴍʙᴇʀs
+
+*🧣 Tittle: 『 Zero Two 』🎈*
+
+*✉ Invite:* https://chat.whatsapp.com/BQTzE7VMCme88aZovO0p9G`, MessageType.text ) 
+return void M.reply('_*Sent you a personal message regarding this 🎈*_')
     }
 }
