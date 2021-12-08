@@ -7,7 +7,7 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'invitelink',
+            command: 'grouplink',
             aliases: ['invite', 'linkgc'],
             description: 'Get the group invite link',
             category: 'general',
