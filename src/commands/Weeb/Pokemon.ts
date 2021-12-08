@@ -26,12 +26,12 @@ export default class Command extends BaseCommand {
 			const name = joined.trim().split(" ")[0].toLowerCase();
 			if (!name)
 				return void M.reply(
-					`Do you want me to give you the data of an unknown pokemon, Baka!`
+					`Type the name of the Pokemon to get information 🐱`
 				);
 			const pkmon = new pokedex();
 			const data = await pkmon.getPokemonByName(name).catch(() => null);
 			if (!data)
-				return void (await M.reply(`No such pokemon name or id, Baka!`));
+				return void (await M.reply(`No such a Pokemon ✖️`));
 			const pkmn = await oakdexPokedex.findPokemon(data.id);
 			let text = "";
 			text += `💫 *Name: ${pkmn.names.en}*\n`;
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 		while (true) {
 			try {
 				M.reply(
-					buffer || "✖ An error occurred. Please try again later",
+					buffer || "✖️ Something went wrong, please try again later ✖️",
 					MessageType.image,
 					undefined,
 					undefined,
@@ -70,11 +70,11 @@ export default class Command extends BaseCommand {
 					undefined
 				).catch((err) => {
 					console.log(`${err}`);
-					M.reply(`✖ An error occurred. Please try again later.`);
+					M.reply(`✖️ Something went wrong, please try again later ✖️`);
 				});
 				break;
 			} catch (err) {
-				M.reply(`✖ An error occurred. Please try again later.`);
+				M.reply(`✖️ Something went wrong, please try again later ✖️`);
 				console.log(`${err}`);
 			}
 		}
