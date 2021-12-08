@@ -29,15 +29,17 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙂𝙚𝙣𝙚𝙧𝙖𝙡•❱━━
-🏮 ${this.client.config.prefix}admins 
-🏮 ${this.client.config.prefix}exp 
-🏮 ${this.client.config.prefix}hi 
-🏮 ${this.client.config.prefix}grouplink 
-🏮 ${this.client.config.prefix}mods 
-🏮 ${this.client.config.prefix}profile 
-🏮 ${this.client.config.prefix}zerotwo 
-🏮 ${this.client.config.prefix}info 
-🏮 ${this.client.config.prefix}rank
+🏮 ${this.client.config.prefix}ᴀᴅᴍɪɴs 
+🏮 ${this.client.config.prefix}ᴇxᴘ 
+🏮 ${this.client.config.prefix}ʜɪ
+🏮 ${this.client.config.prefix}ɢʀᴏᴜᴘʟɪɴᴋ
+🏮 ${this.client.config.prefix}ᴍᴏᴅs 
+🏮 ${this.client.config.prefix}ᴘʀᴏғɪʟᴇ 
+🏮 ${this.client.config.prefix}ᴢᴇʀᴏᴛᴡᴏ
+🏮 ${this.client.config.prefix}sᴜᴘᴘᴏʀᴛ
+🏮 ${this.client.config.prefix}ʀᴜʟᴇs
+🏮 ${this.client.config.prefix}ɪɴғᴏ
+🏮 ${this.client.config.prefix}ʀᴀɴᴋ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
