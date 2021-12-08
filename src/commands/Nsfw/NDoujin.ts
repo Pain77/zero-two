@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 		const terms = joined.trim().split("|");
 		if (terms[0] === "")
 			return void M.reply(
-				`Give me the id and page number of the nhentai doujin\nExample: ${this.client.config.prefix} nhentai 117486 | 1`
+				`Give me the id and page number of the nhentai doujin\nExample: ${this.client.config.prefix}nhentai 117486 | 1`
 			);
 		const id = terms[0];
 		const page = terms[1];
