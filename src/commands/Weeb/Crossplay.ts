@@ -10,7 +10,7 @@ import { MessageType } from '@adiwajshing/baileys'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'crossplay',
+            command: 'cosplay',
             description: `Will send you random crossplay img.`,
             aliases: ['cp'],
             category: 'weeb',
@@ -25,9 +25,9 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-                    `🌟 Here you go.\n`,
+                    `_*Here you go 🐱🌸*_\n`,
                     undefined
                 ).catch((reason: any) =>
-            M.reply(`✖ An error occurred. Please try again later.`))
+            M.reply(`✖ error. Please try again later.`))
     }
 }
