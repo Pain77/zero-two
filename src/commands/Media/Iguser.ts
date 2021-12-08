@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
 	
 	    run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
-        if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
+        if (!joined) return void M.reply('Give me the username of the account you want to search\n\nExample: *${this.client.config.prefix}iguser itsrockash*')
         const chitoge = joined.trim()
         console.log(chitoge)
         const { data } = await axios.get(`https://api-xcoders.xyz/api/stalk/ig?username=${chitoge}&apikey=LJowCce5Pn`)
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                     undefined,
                     undefined,
                     `✔ *Verified*:${data.result.is_verified}\n
-		     🗣*Private*:${data.result.is_private}\n
+		     🗣 *Private*:${data.result.is_private}\n
 		     🎛 *Postcount*:${data.result.posts_coun}\n
 		     🍃 *Following*:${data.result.following}\n
 		     🗻 *Followers*:${data.result.followers}\n
@@ -52,7 +52,7 @@ export default class Command extends BaseCommand {
                 break
             } catch (e) {
                 // console.log('Failed2')
-                M.reply(`An error occurred. Please try again later.`)
+                M.reply(`〽 ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.`)
                 console.log(`This error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`)
             }
         }
