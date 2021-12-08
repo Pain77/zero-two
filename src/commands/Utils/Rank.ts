@@ -117,9 +117,9 @@ export default class Command extends BaseCommand {
 			.setDiscriminator("0001")
 			.setBackground("COLOR", "#ffffff");
 		rank.build({}).then((rankcard) => {
-			const text = `🏮 *Username: ${username}*\n\n〽️ *Level: ${level}*\n\n⭐ *Exp: ${
+			const text = `🉐 *Username: ${username}*\n\n📈 *Level: ${level}*\n\n🎓 *Exp: ${
 				exp || 0
-			} / ${required}*\n\n💫 *Role: ${role}*\n\n`;
+			} / ${required}*\n\n🔰 *Rank: ${role}*\n\n`;
 			M.reply(
 				rankcard,
 				MessageType.image,
