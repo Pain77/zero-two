@@ -10,7 +10,7 @@ import { MessageType } from '@adiwajshing/baileys'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'rules',
+            command: 'rule',
             description: `Get rules list`,
             aliases: ['rules'],
             category: 'general',
@@ -25,8 +25,10 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-                    `---「𝙇𝙤𝙤𝙠 𝙖𝙩 𝙢𝙮 𝙧𝙪𝙡𝙚𝙨 𝙗𝙚𝙛𝙤𝙧𝙚 𝙪𝙨𝙞𝙣𝙜 𝙢𝙚, 𝘿𝙖𝙧𝙡𝙞𝙣𝙜 👠」---\n\n
-(っ◔◡◔)っ𝙳𝙾𝙽'𝚃 𝙰𝚂𝙺 𝙵𝙾𝚁 𝚃𝙷𝙴 𝚂𝙲𝚁𝙸𝙿𝚃 🔖
+                    `---「𝙇𝙤𝙤𝙠 𝙖𝙩 𝙢𝙮 𝙧𝙪𝙡𝙚𝙨 𝙗𝙚𝙛𝙤𝙧𝙚 𝙪𝙨𝙞𝙣𝙜 𝙢𝙚, 𝘿𝙖𝙧𝙡𝙞𝙣𝙜 👠」---
+
+
+(っ◔◡◔)っ𝙵𝙾𝙻𝙻𝙾𝚆 𝚃𝙷𝙴 𝚁𝚄𝙻𝙴𝚂 𝙲𝙰𝚁𝙴𝙵𝚄𝙻𝙻𝚈 🔖
 
 ⎆ ᴀꜱᴋ ᴍᴇ !ꜱᴜᴘ ꜰᴏʀ ᴛʜᴇ ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ ʟɪɴᴋ
 ⎆ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇʀɪᴇꜱ ᴜꜱᴇ !ᴍᴏᴅꜱ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴏᴡɴᴇʀꜱ
@@ -34,7 +36,7 @@ export default class Command extends BaseCommand {
 ⎆ ᴅᴏɴ'ᴛ ꜱᴘᴀᴍ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅꜱ. ɪ'ᴍ ɴᴏᴛ ʀᴇꜱᴘᴏɴᴅɪɴɢ, ɪᴛ ᴍᴇᴀɴꜱ ɪ'ᴍ ᴏꜰꜰʟɪɴᴇ ᴏʀ ᴍʏ ꜱᴇʀᴠᴇʀ'ꜱ ᴅᴏᴡɴ
 ⎆ ᴅᴏɴ'ᴛ ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ
 
-🎀 ＮＯＴＥ: REMEMBER TO KEEP RULES IN MIND OTHERWISE YOU'LL BE BANNED IN NO TIME 🚫
+ *🎀 ＮＯＴＥ: REMEMBER TO KEEP RULES IN MIND OTHERWISE YOU'LL BE BANNED IN NO TIME 🚫*
 
 N͜͡o͜͡w͜͡ ͜͡y͜͡o͜͡u͜͡ ͜͡c͜͡a͜͡n͜͡ ͜͡r͜͡i͜͡d͜͡e͜͡ ͜͡m͜͡e͜͡,͜͡ ͜͡D͜͡a͜͡r͜͡l͜͡i͜͡n͜͡g`,
                     undefined
