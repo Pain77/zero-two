@@ -25,13 +25,11 @@ export default class Command extends BaseCommand {
         const cara = joined.trim()
         console.log(cara)
         
-        //const { data } = await axios.get(`https://api.xteam.xyz/attp?file&text=${cara}`)
+       const { data } = await axios.get(`https://api.xteam.xyz/attp?file&text=${cara}`)
         
 //f ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         //const i = Math.floor(Math.random() * data.result.length)
-const b = await request.buffer(`https://api.xteam.xyz/attp?file&text=${cara}`).catch((e) => {
-            return void M.reply(e.message)
-        })
+const b = data
 
         const sticker: any = await new Sticker(b, {
 			pack: "ᵈᵃʳˡⁱⁿᵍ ᵒʰᵃʸᵒ",
