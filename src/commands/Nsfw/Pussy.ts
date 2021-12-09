@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 		const wall = await akaneko.nsfw.pussy();
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
-				`Don't be a pervert, Baka! This is not an NSFW group.`
+				`This is not a NSFW group, Type !act nsfw to enable it 🎈`
 			);
 		const buffer = await request.buffer(wall).catch((e) => {
 			return void M.reply(e.message);
@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`🌟\n`,
+					`_*Pussy the most expensive meal you'll ever eat 🍑*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
