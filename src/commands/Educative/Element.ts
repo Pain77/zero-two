@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		if (!joined)
-			return void M.reply("Give me an element name/number/symbol, Baka!");
+			return void M.reply("Give me an element name/number/symbol 🎐");
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const chitoge: any = joined.trim();
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
