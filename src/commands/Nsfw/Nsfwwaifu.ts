@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
         const { data } = await axios.get('https://api.waifu.pics/nsfw/waifu')
         if ( !(await this.client.getGroupData(M.from)).nsfw)
             return void M.reply(
-                `Don't be a pervert, Baka! This is not an NSFW group.`
+                `This is not a NSFW group, Type !act nsfw to enable it 🎈`
             )
         const buffer = await request.buffer(data.url).catch((e) => {
             return void M.reply(e.message)
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `*Ahh...*\n`,
+                    `_*Shhhh, show me 🍑*_\n`,
                     undefined
                 ).catch((e) => {
                     console.log(`This Error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
