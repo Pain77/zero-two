@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		let caption = "";
-		caption += `_*🍑 hear we go again*_`;
+		caption += `_*Nothing beats a blowjob 🍑*_`;
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
 				`This is not a NSFW group, Type !act nsfw to enable it 🎈`
