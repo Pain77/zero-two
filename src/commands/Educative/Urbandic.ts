@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "urbandictionary",
-			aliases: ["ur"],
+			aliases: ["ud"],
 			description: "Gives you the definition of the given word. ",
 			category: "educative",
 			usage: `${client.config.prefix}ur [Word you want to search about]`,
@@ -29,9 +29,9 @@ export default class Command extends BaseCommand {
 			.get(`http://api.urbandictionary.com/v0/define?term=${term}`)
 			.then((response) => {
 				// console.log(response);
-				const text = `📚 *Urban dictionary :* ${term}\n\n📖 *Definition :* ${response.data.list[0].definition
+				const text = `📒 *Urban dictionary :* ${term}\n\n📑 *Definition :* ${response.data.list[0].definition
 					.replace(/\[/g, "")
-					.replace(/\]/g, "")}\n\n💬 *Example :* ${response.data.list[0].example
+					.replace(/\]/g, "")}\n\n🔖 *Example :* ${response.data.list[0].example
 					.replace(/\[/g, "")
 					.replace(/\]/g, "")}`;
 				M.reply(text);
