@@ -30,12 +30,12 @@ export default class Command extends BaseCommand {
 		const chitoge = joined.trim().split(" ")[0].toLowerCase();
 		let text = "";
 		char.map((c) => {
-			text += `🎈${c.charAt(0).toUpperCase() + c.slice(1)}\n`;
+			text += `🎈${c.charAt(0).toUpperCase() + c.slice(1)}\n\n`;
 			// index % 4 === 3 ? (text += '\n') : (text += ' '.repeat(10 - c.length))
 		});
 		if (!chitoge)
 			return void M.reply(
-				`*🍑 NSFW OPTIONS 🍑*\n\n${text}Use ${this.client.config.prefix} nsfwpaper (option) to get NSFW content\nExample: ${this.client.config.prefix}nsfwpaper hentai`
+				`*🍑 NSFW OPTIONS 🍑*\n\n${text}Use ${this.client.config.prefix}nsfwpaper (option) to get NSFW content\nExample: ${this.client.config.prefix}nsfwpaper hentai`
 			);
 		if (!char.includes(chitoge))
 			return void M.reply(
