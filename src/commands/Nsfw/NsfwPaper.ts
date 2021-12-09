@@ -60,7 +60,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`*_Onee Chan Baka (๑•﹏•)_*\n`,
+					`_*🍑 hear we go again*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
