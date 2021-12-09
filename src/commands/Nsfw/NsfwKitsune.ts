@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`_*🍑 hear we go again*_\n`,
+					`_*Ayooooo 🍑*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
