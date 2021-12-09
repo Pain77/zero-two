@@ -30,16 +30,16 @@ export default class Command extends BaseCommand {
 		const chitoge = joined.trim().split(" ")[0].toLowerCase();
 		let text = "";
 		char.map((c) => {
-			text += `📍${c.charAt(0).toUpperCase() + c.slice(1)}\n`;
+			text += `🎈${c.charAt(0).toUpperCase() + c.slice(1)}\n`;
 			// index % 4 === 3 ? (text += '\n') : (text += ' '.repeat(10 - c.length))
 		});
 		if (!chitoge)
 			return void M.reply(
-				`🪧 *OPTIONS:*\n${text}Use ${this.client.config.prefix}ac (option) to get Characters\nExample: ${this.client.config.prefix}nsfwpaper hentai`
+				`*🍑 NSFW OPTIONS 🍑*\n${text}Use ${this.client.config.prefix} nsfwpaper (option) to get NSFW content\nExample: ${this.client.config.prefix}nsfwpaper hentai`
 			);
 		if (!char.includes(chitoge))
 			return void M.reply(
-				`✖️ Invalid option! 🧧\nUse ${this.client.config.prefix}animepaper to see all available options`
+				`Ahh invalid option 🐱!\nUse ${this.client.config.prefix}nsfwpaper to see all available options`
 			);
 
 		// fetch result of https://nekos.life/api/v2/img/ from the API using axios
@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 		);
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
-				`Don't be a pervert, Baka! This is not an NSFW group.`
+				`This is not a NSFW group, Type !act nsfw to enable it 🎈`
 			);
 		const buffer = await request.buffer(data.url).catch((e) => {
 			return void M.reply(e.message);
@@ -60,7 +60,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`🌟 Here you go.\n`,
+					`*_Onee Chan Baka (๑•﹏•)_*\n`,
 					undefined
 				).catch((e) => {
 					console.log(
