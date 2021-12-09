@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,
 		{ joined }: IParsedArgs
 	): Promise<void> => {
-		if (!joined) return void M.reply("Give me a level, Baka!");
+		if (!joined) return void M.reply("Give me a level 🎐\nExample: ${this.client.config.prefix}trivia [easy/medium/hard]");
 		const chitoge = joined.trim();
 		await axios
 			.get(
@@ -30,11 +30,11 @@ export default class Command extends BaseCommand {
 			)
 			.then((response) => {
 				// console.log(response);
-				const text = `🎀 *Category: ${response.data.results[0].category}*\n❄ *Difficulty: ${response.data.results[0].difficulty}*\n📒 *Question:${response.data.results[0].question}*\n\n\n🎋 *Answer: ${response.data.results[0].correct_answer}*\n `;
+				const text = `🉐 *Category: ${response.data.results[0].category}*\n🔰 *Difficulty: ${response.data.results[0].difficulty}*\n📒 *Question:${response.data.results[0].question}*\n\n\n🎯 *Answer: ${response.data.results[0].correct_answer}*\n `;
 				M.reply(text);
 			})
 			.catch((err) => {
-				M.reply(`No such level, Baka!`);
+				M.reply(`No such level 🐱`);
 			});
 	};
 }
