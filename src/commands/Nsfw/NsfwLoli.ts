@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 		const i = await loli.getNSFWLoli();
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
-				`Don't be a pervert, Baka! This is not an NSFW group.`
+				`This is not a NSFW group, Type !act nsfw to enable it 🎈`
 			);
 		const buffer = await request.buffer(i.url).catch((e) => {
 			return void M.reply(e.message);
@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`*Onee-chan*\n`,
+					`_*Onee-Chan 🍑*_\n`,
 					undefined
 				).catch((e) => {
 					console.log(
