@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                     MessageType.image,
                     undefined,
                     undefined,
-                    `*Name*: ${data.result.title}\n*Uploaded at*: ${data.result.uploaded_at}\n*Code*: ${data.result.code_nuklir}\n*Artist*: ${data.result.artist.name}\n${data.result.artist.count}\n${data.result.artist.url}\n  `,
+                    `🉐 *Name*: ${data.result.title}\n🔖 *Uploaded at*: ${data.result.uploaded_at}\n📖 *Code*: ${data.result.code_nuklir}\n👨🏻‍🎨 *Artist*: ${data.result.artist.name}\n🔰 *Follow artist:*${data.result.artist.count}\n${data.result.artist.url}\n  `,
                     undefined
                 ).catch((e) => {
                     console.log(`This Error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
