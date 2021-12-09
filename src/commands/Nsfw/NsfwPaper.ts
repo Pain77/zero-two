@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
 		});
 		if (!chitoge)
 			return void M.reply(
-				`*🍑 NSFW OPTIONS 🍑*\n${text}Use ${this.client.config.prefix} nsfwpaper (option) to get NSFW content\nExample: ${this.client.config.prefix}nsfwpaper hentai`
+				`*🍑 NSFW OPTIONS 🍑*\n\n${text}Use ${this.client.config.prefix} nsfwpaper (option) to get NSFW content\nExample: ${this.client.config.prefix}nsfwpaper hentai`
 			);
 		if (!char.includes(chitoge))
 			return void M.reply(
