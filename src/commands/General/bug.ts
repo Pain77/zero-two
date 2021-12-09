@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
       if (!joined) return void (await M.reply(`*Report the bugs*`));
-		const pr = join.trim();
+		const pr = joined.trim();
         return void this.client.sendMessage("120363021490891365@g.us",pr, MessageType.text, {quoted:M.WAMessage })
     }
 }
