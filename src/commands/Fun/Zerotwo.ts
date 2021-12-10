@@ -7,11 +7,11 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'tada',
+            command: 'zerotwo',
             description: 'Chat with bot.',
-            aliases: ['tada'],
+            aliases: ['02'],
             category: 'fun',
-            usage: `${client.config.prefix}tada [city or state name]`
+            usage: `${client.config.prefix}zerotwo (your message)`
         })
     }
 
@@ -21,10 +21,10 @@ export default class Command extends BaseCommand {
         await axios.get(`https://api.simsimi.net/v2/?text=${chitoge}&lc=en`)
         .then((response) => {
                 // console.log(response);
-                const text = `🎍 *Bot*:  ${response.data.success}`
+                const text = `_*🎈Zero Two:*_  ${response.data.success}`
                 M.reply(text);
             }).catch(err => {
-                M.reply(` *Baka!* `)
+                M.reply(`_*Darling 🌸*_`)
             }
             )
     };
