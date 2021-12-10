@@ -28,6 +28,7 @@ export default class Command extends BaseCommand {
         const audio = new YT(videos[0].url, 'audio')
         if (!audio.url) return
         M.reply('_*Loading ៚....*_')
+        const th= await request.buffer(`https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`)
         this.client
             .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
                 quoted: M.WAMessage,
@@ -36,7 +37,7 @@ export default class Command extends BaseCommand {
                         title: videos[0].title.substr(0, 30),
                         body: `author : ${videos[0].author.name.substr(0, 20)}\n𝙕𝙚𝙧𝙤 𝙏𝙬𝙤 ✿`,
                         mediaType: 2,
-                        thumbnailUrl: await request.buffer(`https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`),
+                        thumbnailUrl: th,
                         mediaUrl: audio.url
                     }
                 }
