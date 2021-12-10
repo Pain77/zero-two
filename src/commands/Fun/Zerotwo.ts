@@ -8,15 +8,15 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'zerotwo',
-            description: 'Chat with bot.',
+            description: 'Chat with Zerotwo.',
             aliases: ['02'],
             category: 'fun',
-            usage: `${client.config.prefix}zerotwo (your message)`
+            usage: `${client.config.prefix}zerotwo (text)`
         })
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply(' *Baka!* ')
+        if (!joined) return void M.reply('_*Darling 🌸*_')
         const chitoge = joined.trim()
         await axios.get(`https://api.simsimi.net/v2/?text=${chitoge}&lc=en`)
         .then((response) => {
