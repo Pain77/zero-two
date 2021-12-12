@@ -59,4 +59,4 @@ const buttonMessage = {
     headerType: 1
 }
 
-const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage);
+const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage) }
