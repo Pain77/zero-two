@@ -55,13 +55,13 @@ const buttonMessage = {
     contentText: "Hi it's button message",
     footerText: 'Hello World',
     buttons: buttons,
-    headerType: 1
+    headerType: 2
 }
 const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage)
 
  // send a buttons message!
 const buttons = [
-  {buttonId: 'id3', buttonText: {well3: 'Button 3'}, type: 1},
-  {buttonId: 'id3', buttonText: {well4: 'Button 4'}, type: 1}
+  {buttonId: 'id3', buttonText: {well3: 'Button 3'}, type: 2},
+  {buttonId: 'id3', buttonText: {well4: 'Button 4'}, type: 2}
 ]
 	
