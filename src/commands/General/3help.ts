@@ -49,6 +49,19 @@ const sendMsg = await conn.sendMessage(id, button, MessageType.listMessage)
 const buttons = [
   {buttonId: 'id1', buttonText: {well: 'Button 1'}, type: 1},
   {buttonId: 'id2', buttonText: {well2: 'Button 2'}, type: 1}
-]}
+]
 
+const buttonMessage = {
+    contentText: "Hi it's button message",
+    footerText: 'Hello World',
+    buttons: buttons,
+    headerType: 1
+}
+const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage)
+
+ // send a buttons message!
+const buttons = [
+  {buttonId: 'id3', buttonText: {well3: 'Button 3'}, type: 1},
+  {buttonId: 'id3', buttonText: {well4: 'Button 4'}, type: 1}
+]
 	
