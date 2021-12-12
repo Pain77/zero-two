@@ -60,6 +60,4 @@ const buttonMessage = {
 }
 const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage),
 			}
-		);
-	};
-} 
+	
