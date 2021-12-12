@@ -87,10 +87,10 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `🉐 *Username: ${username}*\n\n📖 *Bio: ${
+            `🉐 *Username: ${username}*\n\n🎪 *Clan: ${M.groupMetadata?.subject}*\n\n📖 *Bio: ${
                 (await this.client.getStatus(user)).status || 'None'
-            }*🎪 *Clan: ${M.groupMetadata?.subject}*\n\n📈 *Level: ${level}*\n\n🎓 *Exp: ${exp || 0}*\n\n🔰 *Role: ${role}*\n\n👑 *Admin: ${M.groupMetadata?.admins?.includes(user) || false
-            }*\n\n✖ *Ban: ${(await this.client.getUser(user)).ban || false}*\n\n`
+            }*\n\n📈 *Level: ${level}*\n\n🎓 *Exp: ${exp || 0}*\n\n🔰 *Role: ${role}*\n\n👑 *Admin: ${M.groupMetadata?.admins?.includes(user) || false
+            }*\n\n✖ *Ban: ${(await this.client.getUser(user)).ban || false}*\n`
 	     
         )
     }
