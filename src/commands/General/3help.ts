@@ -5,6 +5,17 @@ import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 import { MessageType, MessageOptions, Mimetype } from '@adiwajshing/baileys' 
 import request from '../../lib/request'
 
+export default class Command extends BaseCommand {
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
+            command: '3help',
+            description: 'Displays the help menu or shows the info of the command provided',
+            category: 'general',
+            usage: `${client.config.prefix}help (command_name)`,
+            aliases: ['3h']
+        })
+    }
+
 const id = 'abcd@s.whatsapp.net' // the WhatsApp ID 
 // send a simple text!
 const sentMsg  = await conn.sendMessage (id, 'oh hello there', MessageType.text)
