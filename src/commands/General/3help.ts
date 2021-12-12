@@ -24,11 +24,10 @@ const sentMsg  = await conn.sendMessage(id, {degreesLatitude: 24.121231, degrees
 // send a contact!
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Jeff Singh\n' // full name
-            + 'ORG:Ashoka Uni;\n' // the organization of the contact
+            + 'FN:well300\n' // full name
             + 'TEL;type=CELL;type=VOICE;waid=917842346461:+91 78423 46461\n' // WhatsApp ID + phone number
             + 'END:VCARD'
-const sentMsg  = await conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
+const sentMsg  = await conn.sendMessage(id, {displayname: "well", vcard: vcard}, MessageType.contact)
 // send a list message!
 const rows = [
  {title: 'Row 1', description: "Hello it's description 1", rowId:"rowid1"},
@@ -48,16 +47,8 @@ const sendMsg = await conn.sendMessage(id, button, MessageType.listMessage)
 
 // send a buttons message!
 const buttons = [
-  {buttonId: 'id1', buttonText: {displayText: 'Button 1'}, type: 1},
-  {buttonId: 'id2', buttonText: {displayText: 'Button 2'}, type: 1}
+  {buttonId: 'id1', buttonText: {well: 'Button 1'}, type: 1},
+  {buttonId: 'id2', buttonText: {well2: 'Button 2'}, type: 1}
 ]
 
-const buttonMessage = {
-    contentText: "Hi it's button message",
-    footerText: 'Hello World',
-    buttons: buttons,
-    headerType: 1
-}
-const sendMsg = await conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage),
-			}
 	
