@@ -4,8 +4,7 @@ import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
 import { IParsedArgs, ISimplifiedMessage } from "../../typings";
-import pTable from "ptable";
-import npt from "node-periodic-table";
+
 
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
@@ -24,7 +23,7 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
    const q: any = joined.trim();
      var newT = q || `anime`
-      var animeNews = await fetchJson(`https://newsapi.org/v2/everything?q=${newT}&apiKey=b5ed04ca0d874ea0b6fabc72ec47539f`)
+      var animeNews = await axios.get(`https://newsapi.org/v2/everything?q=${newT}&apiKey=b5ed04ca0d874ea0b6fabc72ec47539f`)
       var kik = animeNews.articles
       var nKik = kik[Math.floor(Math.random() * kik.length )]
   const cp=`*TITLE : ${nKik.title}*\n*DESCRIPTION* : ${nKik.description}\n*CONTENT* : ${nKik.content} `
