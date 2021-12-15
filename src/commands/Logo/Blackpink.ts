@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
 			command: "blackpink",
 			description: `Get text image`,
 			aliases: ["bp"],
-			category: "utils",
+			category: "logo",
 			usage: `${client.config.prefix}blackpink`,
 			baseXp: 50,
 		});
