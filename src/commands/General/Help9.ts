@@ -30,7 +30,10 @@ export default class Command extends BaseCommand {
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙇𝙤𝙜𝙤•❱━━
 🌫️ ${this.client.config.prefix}ʙʟᴀᴄᴋᴘɪɴᴋ
-
+🌫️ ${this.client.config.prefix}ɢʟɪᴛᴄʜ
+🌫️ ${this.client.config.prefix}ᴅᴇᴠɪʟ
+🌫️ ${this.client.config.prefix}ʜᴏʀʀᴏʀ
+🌫️ ${.thisclient.config.prefix}ʜᴀʀʀʏᴘᴏᴛᴛᴇʀ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
