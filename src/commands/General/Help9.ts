@@ -9,12 +9,12 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "help3",
+			command: "help9",
 			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}zerotwo`,
+			usage: `${client.config.prefix}help9`,
 		        dm: true,
-                        aliases: ['h3','?3','well3','menu3']
+                        aliases: ['h9','?9','well9','menu9']
 		});
 	}
 
