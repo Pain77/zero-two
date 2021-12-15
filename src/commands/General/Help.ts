@@ -77,6 +77,10 @@ export default class Command extends BaseCommand {
 🏮 ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: ʙʏ ᴜꜱɪɴɢ ᴛʜɪꜱ ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʀᴇᴅɪʀᴇᴄᴛᴇᴅ ᴛᴏ ɴꜱꜰᴡ ꜱɪᴅᴇ.
 🎊 ᴜꜱᴀɢᴇ: ${this.client.config.prefix}ʜᴇʟᴘ8 [${this.client.config.prefix}ʜ8]
 
+━━❰•𝙇𝙤𝙜𝙤•❱━━
+🏮 ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: ʙʏ ᴜsɪɴɢ ᴛʜɪs ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʀᴇᴅɪʀᴇᴄᴛᴇᴅ ᴛᴏ ʟᴏɢᴏ ᴍᴀᴋɪɴɢ sɪᴅᴇ.
+🎊 ᴜꜱᴀɢᴇ: ${this.client.config.prefix}ʜᴇʟᴘ9 [${this.client.config.prefix}ʜ9]
+
         •━━━ ✽ • ✽ ━━━•
  🅃🄷🄰🄽🄺🅈🄾🅄 🄵🄾🅁 🅄🅂🄸🄽🄶 🅃🄷🄴 🄱🄾🅃
         •━━━ ✽ • ✽ ━━━•`,
