@@ -29,20 +29,20 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙉𝙨𝙛𝙬•❱━━
-🌈 ${this.client.config.prefix}ᴀɴᴀʟ 
-🌈 ${this.client.config.prefix}ʙʟᴏᴡᴊᴏʙ 
-🌈 ${this.client.config.prefix}ʜꜱᴇᴀʀᴄʜ 
-🌈 ${this.client.config.prefix}ᴍᴀɪᴅ 
-🌈 ${this.client.config.prefix}ᴍᴀꜱᴛᴜʀʙᴀᴛɪᴏɴ 
-🌈 ${this.client.config.prefix}ɴʜᴇɴᴛᴀɪ
-🌈 ${this.client.config.prefix}ɴꜱꜰᴡᴋɪᴛꜱᴜɴᴇ 
-🌈 ${this.client.config.prefix}ɴꜱꜰᴡʟᴏʟɪ 
-🌈 ${this.client.config.prefix}ɴꜱꜰᴡᴘᴀᴘᴇʀ 
-🌈 ${this.client.config.prefix}ɴꜱꜰᴡɴᴇᴋᴏ 
-🌈 ${this.client.config.prefix}ɴꜱꜰᴡᴡᴀɪꜰᴜ 
-🌈 ${this.client.config.prefix}ᴘᴜꜱꜱʏ 
-🌈 ${this.client.config.prefix}ʀʜᴇɴᴛᴀɪ 
-🌈 ${this.client.config.prefix}ᴛʜɪɢʜꜱ
+🎅🏻 ${this.client.config.prefix}ᴀɴᴀʟ 
+🎅🏻 ${this.client.config.prefix}ʙʟᴏᴡᴊᴏʙ 
+🎅🏻 ${this.client.config.prefix}ʜꜱᴇᴀʀᴄʜ 
+🎅🏻 ${this.client.config.prefix}ᴍᴀɪᴅ 
+🎅🏻 ${this.client.config.prefix}ᴍᴀꜱᴛᴜʀʙᴀᴛɪᴏɴ 
+🎅🏻 ${this.client.config.prefix}ɴʜᴇɴᴛᴀɪ
+🎅🏻 ${this.client.config.prefix}ɴꜱꜰᴡᴋɪᴛꜱᴜɴᴇ 
+🎅🏻 ${this.client.config.prefix}ɴꜱꜰᴡʟᴏʟɪ 
+🎅🏻 ${this.client.config.prefix}ɴꜱꜰᴡᴘᴀᴘᴇʀ 
+🎅🏻 ${this.client.config.prefix}ɴꜱꜰᴡɴᴇᴋᴏ 
+🎅🏻 ${this.client.config.prefix}ɴꜱꜰᴡᴡᴀɪꜰᴜ 
+🎅🏻 ${this.client.config.prefix}ᴘᴜꜱꜱʏ 
+🎅🏻 ${this.client.config.prefix}ʀʜᴇɴᴛᴀɪ 
+🎅🏻 ${this.client.config.prefix}ᴛʜɪɢʜꜱ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
