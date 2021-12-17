@@ -29,15 +29,15 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙀𝙙𝙪𝙘𝙖𝙩𝙞𝙫𝙚•❱━━
-🏮 ${this.client.config.prefix}ʙʀᴀɪɴʟʏ 
-🏮 ${this.client.config.prefix}ᴄᴀʟᴄᴜʟᴀᴛᴏʀ 
-🏮 ${this.client.config.prefix}ᴄᴏᴠɪᴅ 
-🏮 ${this.client.config.prefix}ᴄʀʏᴘᴛᴏ 
-🏮 ${this.client.config.prefix}ᴇʟᴇᴍᴇɴᴛ 
-🏮 ${this.client.config.prefix}ᴛʀɪᴠɪᴀ 
-🏮 ${this.client.config.prefix}ᴜʀʙᴀɴᴅɪᴄᴛɪᴏɴᴀʀʏ 
-🏮 ${this.client.config.prefix}ɪᴘ 
-🏮 ${this.client.config.prefix}ᴡᴇᴀᴛʜᴇʀ
+❄ ${this.client.config.prefix}ʙʀᴀɪɴʟʏ 
+❄ ${this.client.config.prefix}ᴄᴀʟᴄᴜʟᴀᴛᴏʀ 
+❄ ${this.client.config.prefix}ᴄᴏᴠɪᴅ 
+❄ ${this.client.config.prefix}ᴄʀʏᴘᴛᴏ 
+❄ ${this.client.config.prefix}ᴇʟᴇᴍᴇɴᴛ 
+❄ ${this.client.config.prefix}ᴛʀɪᴠɪᴀ 
+❄ ${this.client.config.prefix}ᴜʀʙᴀɴᴅɪᴄᴛɪᴏɴᴀʀʏ 
+❄ ${this.client.config.prefix}ɪᴘ 
+❄ ${this.client.config.prefix}ᴡᴇᴀᴛʜᴇʀ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
