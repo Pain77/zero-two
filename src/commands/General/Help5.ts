@@ -29,17 +29,17 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙈𝙚𝙙𝙞𝙖•❱━━
-🏮 ${this.client.config.prefix}ɪɢᴜꜱᴇʀ 
-🏮 ${this.client.config.prefix}ᴋᴀʀᴀᴏᴋᴇ 
-🏮 ${this.client.config.prefix}ʟʏʀɪᴄꜱ 
-🏮 ${this.client.config.prefix}ᴘʟᴀʏ 
-🏮 ${this.client.config.prefix}ꜱᴘᴏᴛɪꜰʏ 
-🏮 ${this.client.config.prefix}ʏᴛᴀᴜᴅɪᴏ 
-🏮 ${this.client.config.prefix}ʏᴛꜱᴇᴀʀᴄʜ 
-🏮 ${this.client.config.prefix}ʏᴛᴠɪᴅᴇᴏ 
-🏮 ${this.client.config.prefix}ɪɢ 
-🏮 ${this.client.config.prefix}ɪɢᴘᴏsᴛ
-🏮 ${this.client.config.prefix}ᴘɪɴᴛᴇʀᴇsᴛ
+❄ ${this.client.config.prefix}ɪɢᴜꜱᴇʀ 
+❄ ${this.client.config.prefix}ᴋᴀʀᴀᴏᴋᴇ 
+❄ ${this.client.config.prefix}ʟʏʀɪᴄꜱ 
+❄ ${this.client.config.prefix}ᴘʟᴀʏ 
+❄ ${this.client.config.prefix}ꜱᴘᴏᴛɪꜰʏ 
+❄ ${this.client.config.prefix}ʏᴛᴀᴜᴅɪᴏ 
+❄ ${this.client.config.prefix}ʏᴛꜱᴇᴀʀᴄʜ 
+❄ ${this.client.config.prefix}ʏᴛᴠɪᴅᴇᴏ 
+❄ ${this.client.config.prefix}ɪɢ 
+❄ ${this.client.config.prefix}ɪɢᴘᴏsᴛ
+❄ ${this.client.config.prefix}ᴘɪɴᴛᴇʀᴇsᴛ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
