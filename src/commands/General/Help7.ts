@@ -29,19 +29,19 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `━━❰•𝙈𝙤𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣•❱━━
-🏮 ${this.client.config.prefix}ᴀᴄᴛɪᴠᴀᴛᴇ 
-🏮 ${this.client.config.prefix}ᴀᴅᴅ 
-🏮 ${this.client.config.prefix}ᴄʟᴏꜱᴇ 
-🏮 ${this.client.config.prefix}ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ 
-🏮 ${this.client.config.prefix}ᴅᴇʟᴇᴛᴇ 
-🏮 ${this.client.config.prefix}ᴅᴇᴍᴏᴛᴇ 
-🏮 ${this.client.config.prefix}ᴇᴠᴇʀʏᴏɴᴇ 
-🏮 ${this.client.config.prefix}ɢʀᴏᴜᴘᴄʜᴀɴɢᴇ 
-🏮 ${this.client.config.prefix}ᴏᴘᴇɴ 
-🏮 ${this.client.config.prefix}ᴘʀᴏᴍᴏᴛᴇ 
-🏮 ${this.client.config.prefix}ᴘᴜʀɢᴇ 
-🏮 ${this.client.config.prefix}ʀᴇᴍᴏᴠᴇ 
-🏮 ${this.client.config.prefix}ʀᴇᴠᴏᴋᴇ
+❄ ${this.client.config.prefix}ᴀᴄᴛɪᴠᴀᴛᴇ 
+❄ ${this.client.config.prefix}ᴀᴅᴅ 
+❄ ${this.client.config.prefix}ᴄʟᴏꜱᴇ 
+❄ ${this.client.config.prefix}ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ 
+❄ ${this.client.config.prefix}ᴅᴇʟᴇᴛᴇ 
+❄ ${this.client.config.prefix}ᴅᴇᴍᴏᴛᴇ 
+❄ ${this.client.config.prefix}ᴇᴠᴇʀʏᴏɴᴇ 
+❄ ${this.client.config.prefix}ɢʀᴏᴜᴘᴄʜᴀɴɢᴇ 
+❄ ${this.client.config.prefix}ᴏᴘᴇɴ 
+❄ ${this.client.config.prefix}ᴘʀᴏᴍᴏᴛᴇ 
+❄ ${this.client.config.prefix}ᴘᴜʀɢᴇ 
+❄ ${this.client.config.prefix}ʀᴇᴍᴏᴠᴇ 
+❄ ${this.client.config.prefix}ʀᴇᴠᴏᴋᴇ
 ───────────
 🎗 ɴᴏᴛᴇ: ᴜꜱᴇ ${this.client.config.prefix}ʜᴇʟᴘ <ᴄᴏᴍᴍᴀɴᴅ_ɴᴀᴍᴇ> ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴꜰᴏ.
 ───────────    
