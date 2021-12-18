@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "christmas",
 			description: `Get logo from text`,
-			aliases: ["santa"],
+			aliases: ["xmas"],
 			category: "logo",
 			usage: `${client.config.prefix}christmas`,
 			baseXp: 50,
