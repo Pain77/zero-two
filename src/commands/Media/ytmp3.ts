@@ -22,8 +22,8 @@ export default class Command extends BaseCommand {
         
         if (!joined) return void M.reply('Give the link of the video you want to download!')
         const chitoge = joined.trim()
-        console.log(well)
-        const { data } = await axios.get(`https://api.ichikaa.xyz/api/ytmp3?url=${well}&apikey=FGcAgL8c`)
+        console.log(chitoge)
+        const { data } = await axios.get(`https://api.ichikaa.xyz/api/ytmp3?url=${chitoge}&apikey=FGcAgL8c`)
         if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         const buffer = await request.buffer(data.result[0].url).catch((e) => {
             return void M.reply(e.message)
