@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
             const canvas = Canvas.createCanvas(256, 310)
             const ctx = canvas.getContext(`2d`)
             const BR = 20
-            const LR = 10
+            const LR = 30
             for (let i = 0; i < 9; i++) {
                 ctx.clearRect(0, 0, 256, 310)
                 ctx.drawImage(
