@@ -15,7 +15,8 @@ export default class Command extends BaseCommand {
             description: 'Sends the akatsuki version of you',
             category: 'fun',
             usage: `${client.config.prefix}akatsuk [tag/caption image | @mention]`,
-            baseXp: 10
+            baseXp: 10,
+	aliases: ['akatsuki','aka']
         })
     }
 
