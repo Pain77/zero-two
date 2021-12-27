@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
         const sticker = new Sticker(buffer, {
             pack: pack[1] || '平和 Bҽʅσɳɠʂ Tσ ',
             author: pack[2] || ' ƚαʅԋα',
-            crop: parsedArgs.flags.includes('--stretch')
+            crop: parsedArgs.flags.includes('--crop')
         })
         await sticker.build()
         await M.reply(await sticker.get(), MessageType.sticker, Mimetype.webp)
