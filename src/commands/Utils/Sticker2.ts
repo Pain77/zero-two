@@ -1,38 +1,42 @@
 import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import { Sticker } from 'wa-sticker-formatter'
+import { Sticker, Categories, StickerTypes } from 'wa-sticker-formatter'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { IParsedArgs, ISimplifiedMessage } from '../../typings'
-
+import fs from 'fs';
+import { tmpdir } from 'os';
+import { exec } from 'child_process';
+import { promisify } from 'util';
 export default class Command extends BaseCommand {
+    exe() {
+        throw new Error('Method not implemented.')
+    }
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'sticker2',
-            description: 'Converts images/videos into stickers',
+            command: 'take',
+            aliases: ['tf'],
+            description: 'steals the sticker for you',
             category: 'utils',
-            usage: `${client.config.prefix}sticker2 [(as caption | tag)[video | image]]`,
-            dm: true,
-            aliases: ['s2'],
-            baseXp: 30
+            usage: `${client.config.prefix}sticker [(as caption | tag)[sticker]]`,
+            modsOnly: true,
+            baseXp: 100000000
         })
     }
-
+    
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
         let buffer
-        if (M.quoted?.message?.message?.imageMessage || M.quoted?.message?.message?.videoMessage)
-            buffer = await this.client.downloadMediaMessage(M.quoted.message)
-        if (M.WAMessage.message?.imageMessage || M.WAMessage.message?.videoMessage)
-            buffer = await this.client.downloadMediaMessage(M.WAMessage)
-        if (!buffer) return void M.reply(`You didn't provide any Image/Video to convert`)
-        parsedArgs.flags.forEach((flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, '')))
-        const pack = parsedArgs.joined.split('|')
-        const sticker = new Sticker(buffer, {
-            pack: pack[1] || '平和 Bҽʅσɳɠʂ Tσ ',
-            author: pack[2] || ' ƚαʅԋα',
-            crop: parsedArgs.flags.includes('--crop')
-        })
-        await sticker.build()
-        await M.reply(await sticker.get(), MessageType.sticker, Mimetype.webp)
+ const pack = parsedArgs.joined.split('|');
+ if (M.quoted?.message?.message?.stickerMessage) buffer = await this.client.downloadMediaMessage(M.quoted.message)
+        if (!buffer) return void M.reply(`You didn't provide any sticker to convert`)
+        const filename = `${tmpdir()}/${Math.random().toString(36)}`
+        const sticker:any = await  new Sticker(buffer, {
+            pack: pack[1] || '✞ ｷの尺', 
+            author: pack[2] || '\n\n\n山乇ﾚﾚ300', 
+            quality: 50 
+        }).build();
+          fs.writeFileSync(`${filename}.webp`,sticker);
+        const stickerbuffer =  fs.readFileSync(`${filename}.webp`)
+                 await M.reply(stickerbuffer, MessageType.sticker, Mimetype.webp)
     }
 }
