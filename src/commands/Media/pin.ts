@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
             return void M.reply(e.message)
         })
         for (let i = 0; i < amount; i++) {
-			const res = `*_*Here you go 🐱🌸*_`;
+			const res = `_*Here you go 🐱🌸*_`;
 			this.client.sendMessage(
 				M.from,
 				{ url: data.result[Math.floor(Math.random() * data.result.length)] },
