@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         if (!joined) return void M.reply('Give the link of the video you want to download!')
         const well = joined.trim()
         console.log(well)
-        const { data } = await axios.get(`https://api.zekais.com/igdl2?url=${chitoge}&apikey=CnXf9Ojs`)
+        const { data } = await axios.get(`https://api.zekais.com/igdl2?url=${well}&apikey=CnXf9Ojs`)
         if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         const buffer = await request.buffer(data.result[0].url).catch((e) => {
             return void M.reply(e.message)
