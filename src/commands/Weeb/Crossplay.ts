@@ -10,7 +10,7 @@ import { MessageType } from '@adiwajshing/baileys'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'cosplay',
+            command: 'crossplay',
             description: `Will send you random crossplay img.`,
             aliases: ['cp'],
             category: 'weeb',
@@ -20,14 +20,14 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        // fetch result of https://waifu.pics/api/sfw/waifu from the API using axios
-        return void M.reply( await request.buffer(`https://velgrynd.herokuapp.com/api/image/cosplay`),
+        // fetch result of https://velgrynd.herokuapp.com/api/randomimage/cosplay?apikey=Kuxw2RRu from the API using axios
+        return void M.reply( await request.buffer(`https://velgrynd.herokuapp.com/api/randomimage/cosplay?apikey=Kuxw2RRu`),
         MessageType.image,
                     undefined,
                     undefined,
                     `_*Here you go 🐱🌸*_\n`,
                     undefined
                 ).catch((reason: any) =>
-            M.reply(`✖ error. Please try again later.`))
+            M.reply(`✖️ Something went wrong, please try again later ✖️`))
     }
 }
