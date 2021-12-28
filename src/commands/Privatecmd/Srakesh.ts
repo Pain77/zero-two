@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'btlr',
-            aliases: ['sr'],
+            aliases: ['slr'],
             description: 'Converts images/videos into stickers',
             category: 'privatecmd',
             dm: true,
