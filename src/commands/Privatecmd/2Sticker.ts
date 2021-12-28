@@ -13,7 +13,6 @@ export default class Command extends BaseCommand {
             category: 'privatecmd',
             usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]]`,
             dm: true,
-            aliases: ['2s']
             baseXp: 30
         })
     }
@@ -28,8 +27,8 @@ export default class Command extends BaseCommand {
         parsedArgs.flags.forEach((flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, '')))
         const pack = parsedArgs.joined.split('|')
         const sticker = new Sticker(buffer, {
-            pack: pack[1] || '02 ',
-            author: pack[2] || ' ♥',
+            pack: pack[1] || '02',
+            author: pack[2] || ' ',
             crop: parsedArgs.flags.includes('--stretch')
         })
         await sticker.build()
