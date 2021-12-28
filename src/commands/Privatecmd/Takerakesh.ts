@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'trakesh',
-            aliases: ['tr'],
+            aliases: ['tlr'],
             description: 'steals the stickers for rakesh',
             category: 'privatecmd',
             dm: true,
