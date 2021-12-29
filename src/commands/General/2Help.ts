@@ -61,7 +61,9 @@ export default class Command extends BaseCommand {
               
               🎐 *Group Only:* ${this.client.util.capitalize(JSON.stringify(!command.config.dm ?? true))}\n
               
-             💎 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
+             💎 *Usage:* ${command.config?.usage || ''}\n\n
+             
+             📒 *Description:* ${command.config?.description || ''}`
         )
     }
 
