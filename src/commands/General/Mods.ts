@@ -1,4 +1,4 @@
-/** @format */
+l/** @format */
 
 import { MessageType, Mimetype } from "@adiwajshing/baileys";
 import MessageHandler from "../../Handlers/MessageHandler";
@@ -19,30 +19,24 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const kacchan =
-			"https://c.tenor.com/H2tVYsdRw0kAAAPo/zerotwo-darlinginthefranxx.mp4";
+		const lordrakesh =
+			"https://c.tenor.com/8s8KUJnQUsEAAAPo/riko-saikawa.mp4";
 		return void this.client.sendMessage(
 			M.from,
-			{ url: kacchan },
+			{ url: lordrakesh },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `🏮 ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ\n
-╰• ᴡᴇʟʟ300
-🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/917842346461?text=𝙝𝙚𝙡𝙡𝙤+300/>
-──────────────
-╰• ᴘᴀɪɴ
-🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/919662713165?text=𝙝𝙚𝙡𝙡𝙤+ᴘᴀɪɴ
-──────────────
 ╰• ʟᴏʀᴅ ʀᴀᴋᴇꜱʜ
 🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/918473956301?text=𝙝𝙚𝙡𝙡𝙤+ʀᴀᴋᴇꜱʜ
 ──────────────
-╰• ʙʟᴀᴢᴇ
-🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/917721059975?text=𝙝𝙚𝙡𝙡𝙤+ʙʟᴀᴢᴇ
+╰• ᴏɴᴄᴇ ᴀᴘᴏɴᴀᴛɪᴍᴇ
+🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/919626582245?text=𝙝𝙚𝙡𝙡𝙤+ᴏɴᴄᴇ
 ──────────────────
 🅂🅄🄿🄿🄾🅁🅃 🄶🅁🄾🅄🄿                                        
-🎗 https://chat.whatsapp.com/JboXSiHnBLBLE9cJ5Ai8ur 
+🎗 ᴛʏᴘᴇ !sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ʙᴏᴛ ᴡɪʟʟ sᴇɴᴅ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ ɪɴ ʏᴏᴜʀ ᴅᴍ!!!
 •━━━ ✽ • ✽ ━━━•`,
 			}
 		);
