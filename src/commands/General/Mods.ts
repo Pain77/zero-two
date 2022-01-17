@@ -19,11 +19,11 @@ export default class Command extends BaseCommand {
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const lordrakesh =
+		const zerotwo =
 			"https://c.tenor.com/8s8KUJnQUsEAAAPo/riko-saikawa.mp4";
 		return void this.client.sendMessage(
 			M.from,
-			{ url: lordrakesh },
+			{ url: zerotwo },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
