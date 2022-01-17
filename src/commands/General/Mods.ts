@@ -1,4 +1,4 @@
-l/** @format */
+/** @format */
 
 import { MessageType, Mimetype } from "@adiwajshing/baileys";
 import MessageHandler from "../../Handlers/MessageHandler";
