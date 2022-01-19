@@ -42,7 +42,7 @@ export default class EventHandler {
                     contextInfo
                 }))
         }
-            if (remove) {
+        if (remove) {
             let image = await this.client.assets.get('goodbye1')
             
             if (image)
