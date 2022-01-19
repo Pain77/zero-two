@@ -16,6 +16,7 @@ export default class EventHandler {
         const data = await this.client.getGroupData(event.jid)
         if (!data.events) return void null
         const add = event.action === 'add'
+        const remove = event.action === 'remove'
         const text = add
             ? `⁍ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 - ${group.subject || '___'} -\n\n🍁ɢʀᴏᴜᴘ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ:\n${
                group.desc
@@ -33,6 +34,16 @@ export default class EventHandler {
         }
         if (add) {
             let image = await this.client.assets.get('welcome1')
+            
+            if (image)
+                return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
+                    caption: text,
+                    mimetype: Mimetype.gif,
+                    contextInfo
+                }))
+        }
+            if (remove) {
+            let image = await this.client.assets.get('goodbye1')
             
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
