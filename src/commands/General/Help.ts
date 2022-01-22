@@ -1,35 +1,30 @@
-/** @format */
-
-
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
-import MessageHandler from "../../Handlers/MessageHandler";
-import BaseCommand from "../../lib/BaseCommand";
-import WAClient from "../../lib/WAClient";
-import { ISimplifiedMessage } from "../../typings";
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
+import { join } from 'path'
+import MessageHandler from '../../Handlers/MessageHandler'
+import BaseCommand from '../../lib/BaseCommand'
+import WAClient from '../../lib/WAClient'
+import { ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
-	constructor(client: WAClient, handler: MessageHandler) {
-		super(client, handler, {
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
 			command: "help",
 			description: "Displays the info",
 			category: "general",
 			usage: `${client.config.prefix}zerotwo`,
 		        dm: true,
                         aliases: ['h','?','well','menu']
-		});
-	}
+         })
+    }
 
-	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const zerotwo = 
-			"https://thumbs.gfycat.com/VastDazzlingCuscus-mobile.mp4";
-		return void this.client.sendMessage(
-			M.from,
-			{ url: zerotwo },
-			MessageType.video,
-			{
-				quoted: M.WAMessage,
-				mimetype: Mimetype.gif,
-				caption: `🎀ʜᴇʟʟᴏ ᴅᴀʀʟɪɴ' !
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+        const n = [
+            './assets/zerotwo-help.mp4'
+        ]
+        let well = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,
+            mimetype: Mimetype.gif,
+            caption: `🎀ʜᴇʟʟᴏ ᴅᴀʀʟɪɴ' !
 🎗ɪ'ᴍ ᴢᴇʀᴏᴛᴡᴏ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ-ʙᴏᴛ.
 〽ᴍʏ ᴘʀᴇꜰɪx ɪꜱ - " ${this.client.config.prefix} "
 ┈┈┈┈┈┈✁━━━━━━━━━
@@ -85,8 +80,8 @@ export default class Command extends BaseCommand {
 
      🎕┈┈┈┈🎕❂⋯❋⋯❂🎕┈┈┈┈🎕
  🅃🄷🄰🄽🄺🅈🄾🅄 🄵🄾🅁 🅄🅂🄸🄽🄶 🅃🄷🄴 🄱🄾🅃
-     🎕┈┈┈┈🎕❂⋯❋⋯❂🎕┈┈┈┈🎕`,
-			}
-		);
-	};
-}  
+     🎕┈┈┈┈🎕❂⋯❋⋯❂🎕┈┈┈┈🎕` }
+        )
+    }
+}
+  
