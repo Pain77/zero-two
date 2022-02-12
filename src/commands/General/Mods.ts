@@ -29,8 +29,11 @@ export default class Command extends BaseCommand {
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
 				caption: `🏮 ᴍᴏᴅᴇʀᴀᴛᴏʀꜱ\n
-╰• ʟᴏʀᴅ ʀᴀᴋᴇꜱʜ
-🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/918473956301?text=𝙝𝙚𝙡𝙡𝙤+ʀᴀᴋᴇꜱʜ
+╰• ᴀᴍɪᴛ ᴄʜᴏᴜʜᴀɴ
+🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/919929140529?text=𝙝𝙚𝙡𝙡𝙤+ᴀᴍɪᴛ
+
+╰• ᴘᴀɪɴ
+🎗ᴄᴏɴᴛᴀᴄᴛ: wa.me/919662713165?text=𝙝𝙚𝙡𝙡𝙤+ᴘᴀɪɴ
 ──────────────────
 🅂🅄🄿🄿🄾🅁🅃 🄶🅁🄾🅄🄿                                        
 🎗 ᴛʏᴘᴇ !sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ʙᴏᴛ ᴡɪʟʟ sᴇɴᴅ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ ɪɴ ʏᴏᴜʀ ᴅᴍ!!!
